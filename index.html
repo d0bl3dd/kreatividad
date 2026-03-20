@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Simulación Inteligente de Recolección</title>
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Simulación de Recolección Inteligente</h1>
+    <p class="subtitulo">Optimización de rutas basada en datos simulados (IoT)</p>
+</header>
+
+<main class="container">
+
+    <!-- MAPA -->
+    <section class="map-section">
+        <div class="map" id="map">
+            <svg id="lines"></svg>
+        </div>
+        <p class="map-label">Mapa simulado de contenedores urbanos</p>
+    </section>
+
+    <!-- PANEL -->
+    <aside class="panel">
+
+        <h2>Control de Simulación</h2>
+
+        <button onclick="simular()">Generar simulación</button>
+
+        <div class="resultados">
+
+            <div class="card">
+                <h3>Contenedores prioritarios</h3>
+                <p id="resultado">0</p>
+            </div>
+
+            <div class="card">
+                <h3>IDs seleccionados</h3>
+                <p id="lista">-</p>
+            </div>
+
+            <div class="card">
+                <h3>Eficiencia simulada</h3>
+                <p id="eficiencia">0%</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="info-extra">
+            <p><strong>Total contenedores:</strong> 5</p>
+            <p><strong>Modelo:</strong> Simulación sin datos reales</p>
+            <p><strong>Criterio:</strong> >70% = recolección</p>
+        </div>
+
+    </aside>
+
+</main>
+
+<footer>
+    <p>Demo académico - Ingeniería de Sistemas</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
